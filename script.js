@@ -8,7 +8,7 @@ const SearchButton = document.getElementById("search-btn");
 
 async function fetchRandomNews() {
   try {
-    const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&pageSize=10&apiKey=${apiKey}`;
+    const apiUrl =  `https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=us&pageSize=10&apiKey=${apiKey}`;
     
     const response = await fetch(apiUrl);
     const data = await response.json();
