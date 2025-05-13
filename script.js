@@ -34,7 +34,7 @@ SearchButton.addEventListener("click", async ()=> {
 
 async function fetchNewsQuery(query) {
   try {
-    const apiUrl = `https://newsapi.org/v2/everything?q=${query}&pageSize=10&apiKey=${apiKey}`;
+    const apiUrl = `http://cors-anywhere.com/https://newsapi.org/v2/everything?q=${query}&pageSize=10&apiKey=${apiKey}`;
     
     const response = await fetch(apiUrl);
     const data = await response.json();
